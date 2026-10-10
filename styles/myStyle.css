@@ -75,7 +75,7 @@ header nav ul li a:hover {
 header nav ul li a.notActive:hover {
     border-color: #251F50;
 }
- 
+
 header .userButtons {
     float: left;
     margin-top: 12px;
@@ -484,14 +484,9 @@ aside > p {
     background-color: #92D1E9;
 }
 
-.courseGrid .courseLink.notActive {
-    color: gray;
-}
-
 .courseGrid .courseLink.notActive:hover {
     background-color: white;
 }
-
 
 /* ---------- דף צור קשר: טופס ופרטי התקשרות ---------- */
 #contactMain {
@@ -709,7 +704,6 @@ footer .inner > .footerLinks {
 .footerLinks > li > a.notActive:hover {
     color: white;
 }
- ⁠
 
 footer .inner > p {
     float: left;

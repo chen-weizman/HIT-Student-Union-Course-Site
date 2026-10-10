@@ -72,6 +72,10 @@ header nav ul li a:hover {
     border-color: #92D1E9;
 }
 
+header nav ul li a.notActive:hover {
+    border-color: #251F50;
+}
+ 
 header .userButtons {
     float: left;
     margin-top: 12px;
@@ -702,6 +706,11 @@ footer .inner > .footerLinks {
     color: #92D1E9;
 }
 
+.footerLinks > li > a.notActive:hover {
+    color: white;
+}
+ ⁠
+
 footer .inner > p {
     float: left;
     font-size: 14px;
@@ -744,6 +753,11 @@ footer p > a:hover {
 .btnOutline:hover {
     color: #251F50;
     background-color: #92D1E9;
+}
+
+.btnOutline.notActive:hover {
+    color: white;
+    background-color: #251F50;
 }
 
 /* ================= עמודים: קורס, הרשמה, אודות, מפת האתר ================= */

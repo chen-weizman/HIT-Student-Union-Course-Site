@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>הרשמה לקורס פייתון למתחילים - קורסי העשרה - האגודה HIT</title>
+    <meta name="description" content="טופס הרשמה לקורס פייתון למתחילים של אגודת הסטודנטים ב-HIT" />
+    <meta name="keywords" content="הרשמה לקורס, פייתון למתחילים, קורסי העשרה, האגודה, HIT" />
+    <meta name="author" content="חן ויזמן, ישראל שפרנגל, ולריה רויטיך" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <div class="inner">
+                <a href="index.html" class="logo"><img src="images/logo-white.png" alt="האגודה - אגודת הסטודנטים המכון הטכנולוגי חולון HIT" title="האגודה - אגודת הסטודנטים המכון הטכנולוגי חולון HIT" /></a>
+                <div class="userButtons">
+                    <a href="#" class="btnLogin notActive">התחברות</a>
+                    <a href="#" class="btnRegister notActive">הרשמה</a>
+                </div>
+                <nav aria-label="תפריט ראשי">
+                    <ul>
+                        <li><a href="courses.html">קורסי העשרה</a></li>
+                        <li><a href="#" class="notActive">אירועים</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צור קשר</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav aria-label="פירורי לחם" class="breadcrumbs">
+            <div class="inner">
+                <ol>
+                    <li><a href="index.html">דף הבית</a><span>></span></li>
+                    <li><a href="courses.html">קורסי העשרה</a><span>></span></li>
+                    <li><a href="course-python.html">פייתון למתחילים</a><span>></span></li>
+                    <li>הרשמה לקורס</li>
+                </ol>
+            </div>
+        </nav>
+
+        <main>
+            <section id="registerHero" class="pageHero">
+                <div class="inner">
+                    <h1>הרשמה לקורס</h1>
+                    <p>ממלאים את הפרטים, ואנחנו נחזור אליכם עם אישור ההרשמה.</p>
+                </div>
+            </section>
+
+            <section id="registerMain">
+                <div class="contactWrap">
+                    <div class="formBox">
+                        <h2>טופס הרשמה</h2>
+                        <p class="formNote">שדות המסומנים ב-<span class="req">*</span> הם שדות חובה</p>
+                        <form>
+                            <input type="hidden" id="myEmail" name="name" value="yourMail@gmail.com" />
+
+                            <label for="courseSelect" class="fullRow">הקורס שנבחר <span class="req">*</span>
+                                <select id="courseSelect" name="course" class="field">
+                                        <option value="1">ספרדית למתחילים</option>
+                                        <option value="2" selected>פייתון למתחילים</option>
+                                        <option value="3">בינה מלאכותית ככלי עבודה</option>
+                                        <option value="4">צילום בטלפון</option>
+                                        <option value="5">רישום ואיור</option>
+                                        <option value="6">יוגה לסטודנטים</option>
+                                        <option value="7">אקסל מעשי</option>
+                                        <option value="8">ערבית מדוברת</option>
+                                </select>
+                            </label>
+
+                            <div class="formRow">
+                                <label for="fullName">שם מלא <span class="req">*</span>
+                                    <input type="text" id="fullName" name="fullName" class="field" placeholder="ישראל ישראלי" required />
+                                </label>
+                                <label for="studentId">ת.ז סטודנט <span class="req">*</span>
+                                    <input type="number" id="studentId" name="studentId" class="field" placeholder="123456789" required />
+                                </label>
+                            </div>
+
+                            <div class="formRow">
+                                <label for="email">דוא"ל <span class="req">*</span>
+                                    <input type="email" id="email" name="email" class="field" placeholder="name@gmail.com" required />
+                                </label>
+                                <label for="phone">סלולרי
+                                    <input type="tel" id="phone" name="phone" class="field" placeholder="050-0000000" />
+                                </label>
+                            </div>
+
+                            <label for="terms" class="choice"><input type="checkbox" id="terms" name="terms" required />קראתי ואני מאשר/ת את תנאי ההרשמה <span class="req">*</span></label>
+
+                            <input type="submit" id="sendBtn" value="שליחת ההרשמה" />
+
+                            <div id="feedback"></div>
+                        </form>
+                    </div>
+
+                    <aside>
+                        <h2>הקורס שבחרתם</h2>
+                        <p class="chosenName">פייתון למתחילים</p>
+                        <ul class="contactInfo">
+                            <li><img src="images/icon-calendar.png" alt="" />10 שיעורים מוקלטים</li>
+                            <li><img src="images/icon-clock.png" alt="" />שיעורים של שעה</li>
+                            <li><img src="images/icon-pin.png" alt="" />באונליין: קישור יישלח לאחר ההרשמה</li>
+                        </ul>
+                        <a href="course-python.html" class="backLink">חזרה לפרטי הקורס ›</a>
+                        <img src="images/course-python.png" alt="" class="asideArt" />
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner">
+                <ul class="footerLinks">
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="#" class="notActive">אירועים</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="siteMap.html">מפת האתר</a></li>
+                </ul>
+                <p>משרדי האגודה: בניין 5, חדר 105 | 03-7283300 | <a href="mailto:info@agudahit.co.il">info@agudahit.co.il</a></p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

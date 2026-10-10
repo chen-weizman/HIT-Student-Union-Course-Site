@@ -480,6 +480,15 @@ aside > p {
     background-color: #92D1E9;
 }
 
+.courseGrid .courseLink.notActive {
+    color: gray;
+}
+
+.courseGrid .courseLink.notActive:hover {
+    background-color: white;
+}
+
+
 /* ---------- דף צור קשר: טופס ופרטי התקשרות ---------- */
 #contactMain {
     width: 1060px;
